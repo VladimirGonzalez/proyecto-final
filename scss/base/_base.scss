@@ -1,0 +1,31 @@
+// importa todas las variables
+@use "variables" as *;
+
+// reset liviano + tipografía
+*, *::before, *::after { box-sizing: border-box; }
+
+html { height: 100%; }
+
+body {
+  font-family: $font-family-base;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  // tema claro / oscuro de ejemplo
+  @if $theme == light {
+    background: $color-light;
+    color: $color-dark;
+  } @else if $theme == dark {
+    background: $color-dark;
+    color: $color-light;
+  } @else {
+    background: gray;
+    color: white;
+  }
+}
+
+main { flex: 1; }   // asegura footer abajo
+img  { max-width: 100%; display: block; }

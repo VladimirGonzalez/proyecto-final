@@ -1,0 +1,22 @@
+// animación simple para dar vida al header.
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+[data-animate].visible {
+  animation: fadeInUp .6s forwards;
+}

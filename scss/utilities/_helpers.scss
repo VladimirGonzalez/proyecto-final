@@ -1,0 +1,13 @@
+@use "../base/variables" as *;
+@use "mixins"           as *;   
+
+// para Todos los botones 
+%btn-base{
+  @include soft-hover(opacity){ opacity:.85; }
+  border-radius:$radius-base;
+}
+
+//bucle márgenes utiles .m-1 … .m-5 
+@for $i from 1 through 5{
+  .m-#{$i}{ margin: #{$i*.25}rem !important; }
+}

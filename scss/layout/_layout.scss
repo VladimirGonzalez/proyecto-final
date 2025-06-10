@@ -1,0 +1,47 @@
+
+@use "../base/variables" as *;
+@use "../utilities/mixins" as *;
+
+// navbar 
+.navbar {
+  .nav-link {
+    color:$color-dark;
+
+    // @extend se usa más abajo en _buttons.scss,
+    // acá metemos nesting puro.
+    &.active,
+    &:hover { color:$color-primary; }
+  }
+}
+
+// hero header
+header.bg-primary {
+  // degradado + imagen
+  background-image: linear-gradient(rgba($color-primary,.80),rgba(#000,.18)),
+                    url("../img/banner.webp");
+  background-size:cover;
+  background-position:center;
+  animation: fadeInUp .8s both;
+
+  // reutilizamos el mixin center
+  .flex-hero {
+    @include center;
+    flex-direction:column;
+    text-align:center;
+    h1 { font-weight:700; }
+  }
+
+  @include respond(md) {
+    h1 { font-size:2rem;  }  
+    p  { font-size:1rem;  }
+  }
+}
+
+//grid de cursos
+.grid-cursos {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1rem;
+
+  @include respond(md) { grid-template-columns:1fr; }
+}

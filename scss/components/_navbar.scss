@@ -1,0 +1,21 @@
+@use "../utilities/mixins"   as *;
+@use "../base/variables"     as *;
+
+//ajustes del navbar
+@include respond(md) {
+  .navbar-brand img { height: 24px; }
+}
+
+.navbar .nav-link {
+  color: $color-dark;
+
+  &.active,
+  &:hover { color: $color-primary; }
+}
+
+// logo grande en desktop
+.navbar-brand img {
+  height: 32px;
+
+  @include respond(md) { height: 24px; }
+}

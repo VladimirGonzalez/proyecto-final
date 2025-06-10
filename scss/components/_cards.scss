@@ -1,0 +1,21 @@
+@use "../utilities/mixins"   as *;
+@use "../base/variables"     as *;
+
+.card {
+  border:none;
+  box-shadow:$shadow-soft;
+  border-radius:$radius-base;
+  overflow:hidden;
+
+  img.card-img-top {
+    object-fit:cover;
+    height:180px;
+    @include respond(md) { height:140px; }
+    
+  }
+
+  // mixin de hover para la card
+  @include soft-hover(transform) {
+    transform:translateY(-4px) scale(1.02);
+  }
+}

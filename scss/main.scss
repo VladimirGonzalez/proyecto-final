@@ -1,0 +1,19 @@
+// config
+@use "base/variables" as *;   // tokens de diseño
+@use "utilities/mixins" as *; // mixins globales
+
+// reset + fundamentos
+@use "base/reset";            // reset mínimo
+@use "base/base";             // tipografía, body, etc.
+
+//utilidades
+@use "utilities/helpers";
+@use "utilities/animations";
+
+//componentes
+@use "components/navbar";
+@use "components/buttons";
+@use "components/cards";
+
+//layouts / sections
+@use "layout/layout";         // hero, grid-cursos, etc.

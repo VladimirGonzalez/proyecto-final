@@ -1,0 +1,30 @@
+// variables globales
+//....................
+$primary : #0d6efd;
+$dark    : #212529;
+$light   : #f8f9fa;
+
+$font-main: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+// efectos
+$radius-base : .5rem;                     // redondeo comun
+$shadow-soft : 0 .25rem .5rem rgba(#000,.10);
+
+// breakpoints (ambos alias para evitar futuros “undefined”)
+$bp-sm:    576px  !default;
+$bp-md:    768px  !default;
+$bp-lg:    992px  !default;
+$bp-xl:    1200px !default;
+
+$break-sm: $bp-sm !default;
+$break-md: $bp-md !default;
+$break-lg: $bp-lg !default;
+$break-xl: $bp-xl !default;
+
+// alias para compatibilidad
+$color-primary    : $primary !default;
+$color-dark       : $dark    !default;
+$color-light      : $light   !default;
+$font-family-base : $font-main !default;
+
+$theme: light !default;      // "light"  o  "dark"

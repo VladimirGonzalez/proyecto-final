@@ -1,0 +1,22 @@
+@use "../base/variables" as *;
+
+// media-queries
+@mixin respond($size) {
+  @if   $size == sm { @media (max-width: $bp-sm) { @content; } }
+  @else if $size == md { @media (max-width: $bp-md) { @content; } }
+  @else if $size == lg { @media (max-width: $bp-lg) { @content; } }
+  @else if $size == xl { @media (max-width: $bp-xl) { @content; } }
+}
+
+// hover suave
+@mixin soft-hover($prop: transform, $time: .3s) {
+  transition: #{$prop} $time ease;
+  &:hover { @content; }
+}
+
+// centrado flex
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

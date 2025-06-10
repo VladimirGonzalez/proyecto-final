@@ -1,0 +1,10 @@
+{
+  "name": "Proyecto Final",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss css/main.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
+}
