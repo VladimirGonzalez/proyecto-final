@@ -9,9 +9,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/svg+xml" href="https://framerusercontent.com/images/fKtNWuYKZuZGNSFUI57cKR23M0.svg">
+
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Cursos online en vivo de programación, diseño web y Python con mentoría en español. Sumate a la comunidad y aprendé sin límites."
+    />
+    <link
+      rel="canonical"
+      href="https://vladimirgonzalez.github.io/proyecto-final"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Cursos online en vivo • Proyecto Final"
+    />
+    <meta
+      property="og:description"
+      content="Aprendé programación y diseño web con mentoría argentina y clases 100 % prácticas."
+    />
+    <meta
+      property="og:url"
+      content="https://vladimirgonzalez.github.io/proyecto-final"
+    />
+    <meta
+      property="og:image"
+      content="https://vladimirgonzalez.github.io/proyecto-final/img/banner.webp"
+    />
+    <meta property="og:locale" content="es_AR" />
   </head>
 
   <body>
+    <!-- barra superior oferta 35% descuentos -->
+    <div class="alert alert-warning text-center py-2 mb-0 small" role="alert">
+      🔥 35&nbsp;% OFF + 12&nbsp;cuotas sin interés —
+      <strong>hasta el 12/06</strong>.
+      <a href="pages/cursos.html" class="alert-link fw-semibold"
+        >¡Inscribite ahora!</a
+      >
+    </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-light border-bottom">
       <div class="container">
@@ -44,7 +83,7 @@
               <a class="nav-link" href="pages/contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
+              <a class="nav-link" href="pages/faq.html">FAQ</a>
             </li>
           </ul>
         </div>
@@ -59,6 +98,28 @@
         <a href="pages/cursos.html" class="btn btn-light">Explorar cursos</a>
       </div>
     </header>
+
+    <!--  empresas que confían en nuestros graduados  -->
+    <section class="bg-light py-4 border-top border-bottom" id="empresas">
+      <div class="container text-center">
+        <p class="small text-uppercase text-muted mb-3">
+          Alumnos trabajando en
+        </p>
+
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+          <img src="img/logos/pedidosya.svg" alt="PedidosYa" height="36" />
+          <img src="img/logos/rappi.svg" alt="Rappi" height="36" />
+          <img src="img/logos/binance.svg" alt="Binance" height="36" />
+          <img
+            src="img/logos/mercadolibre.svg"
+            alt="MercadoLibre"
+            height="36"
+          />
+          <img src="img/logos/uala.svg" alt="Ualá" height="36" />
+          <img src="img/logos/cocos.svg" alt="Cocos Capital" height="36" />
+        </div>
+      </div>
+    </section>
 
     <!-- destacados -->
     <main class="container my-5">
@@ -113,7 +174,303 @@
           </article>
         </div>
       </div>
+
+      <!-- presentación de cada curso  -->
+      <section class="container my-5" id="intro-videos">
+        <h2 class="mb-4 text-center">Presentaciones de los cursos</h2>
+
+        <div class="row g-4">
+          <!-- HTML - CSS  -->
+          <div class="col-md-4">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/t6KwZ4wBcnI?rel=0"
+                title="Presentación curso HTML & CSS"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="small mt-2 text-muted text-center">
+              HTML &amp; CSS desde cero
+            </p>
+          </div>
+
+          <!-- javascript  -->
+          <div class="col-md-4">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/-hQ4qO4oUns?rel=0"
+                title="Presentación curso JavaScript"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="small mt-2 text-muted text-center">JavaScript práctico</p>
+          </div>
+
+          <!-- python  -->
+          <div class="col-md-4">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/MOk29Or9rPQ?rel=0"
+                title="Presentación curso Python"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="small mt-2 text-muted text-center">Python para todos</p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!--  ¿POR QUÉ ELEGIRNOS?  -->
+    <section class="container my-5" id="por-que-nosotros">
+      <h2 class="text-center mb-4">¿Por qué elegirnos?</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+        <!-- mentores  -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm py-4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/lucide-icons/lucide/icons/users.svg"
+              alt=""
+              width="48"
+              class="mx-auto mb-3 opacity-75"
+            />
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Mentoría "bien argenta 🇦🇷"</h3>
+              <p class="small mb-0">
+                Clases en vivo con profes que hablan de código <em>y</em> de
+                fútbol. Consultas ilimitadas por Discord, mate de por medio ☕.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- flexibilidad  -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm py-4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/lucide-icons/lucide/icons/clock.svg"
+              alt=""
+              width="48"
+              class="mx-auto mb-3 opacity-75"
+            />
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Flexibilidad 24&nbsp;×&nbsp;7</h3>
+              <p class="small mb-0">
+                Grabaciones on-demand para mirar en el bondi o maratonear de
+                noche. ¡Vos manejás el ritmo!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- certificado  -->
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm py-4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/lucide-icons/lucide/icons/award.svg"
+              alt=""
+              width="48"
+              class="mx-auto mb-3 opacity-75"
+            />
+            <div class="card-body">
+              <h3 class="h6 fw-bold">Certificado con respaldo</h3>
+              <p class="small mb-0">
+                Validado por referentes IT locales; sumalo a tu CV y a LinkedIn
+                para destacarte en el mercado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  metricas de alumnos graduados -->
+    <section class="container py-5" id="metricas">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <h3 class="display-6 fw-bold mb-0">+350&nbsp;k</h3>
+          <p class="small text-muted mb-0">Graduados</p>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h3 class="display-6 fw-bold mb-0">8.5&nbsp;/10</h3>
+          <p class="small text-muted mb-0">Satisfacción promedio</p>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h3 class="display-6 fw-bold mb-0">98&nbsp;%</h3>
+          <p class="small text-muted mb-0">Empleabilidad</p>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h3 class="display-6 fw-bold mb-0">🇦🇷</h3>
+          <p class="small text-muted mb-0">Hecho en Argentina</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonios falsos  -->
+    <section class="container my-5" id="testimonios">
+      <h2 class="text-center mb-4">Lo que dicen nuestros estudiantes</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <!-- lucia  -->
+        <div class="col">
+          <figure class="card h-100 border-0 shadow-sm p-4">
+            <blockquote class="blockquote mb-3">
+              <p class="mb-2">
+                Arranqué sin saber qué era un <code>&lt;div&gt;</code> y hoy
+                estoy lanzando mi primer&nbsp;e-commerce. <br />¡Gracias por
+                tanta paciencia y buena onda!
+              </p>
+            </blockquote>
+
+            <!-- firma + rating -->
+            <figcaption
+              class="d-flex align-items-center gap-2 small text-muted"
+            >
+              <img
+                src="https://i.pravatar.cc/48?u=lucia"
+                alt=""
+                class="rounded-circle"
+                width="48"
+                height="48"
+              />
+              <span class="flex-grow-1">Lucía – Rosario 🇦🇷</span>
+              <span class="text-warning"> ★★★★★ </span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- agustin  -->
+        <div class="col">
+          <figure class="card h-100 border-0 shadow-sm p-4">
+            <blockquote class="blockquote mb-3">
+              <p class="mb-2">
+                El profe explica clarísimo y encima manda memes al grupo.
+                Aprendí JavaScript… ¡y me reí un montón 😂!
+              </p>
+            </blockquote>
+
+            <figcaption
+              class="d-flex align-items-center gap-2 small text-muted"
+            >
+              <img
+                src="https://i.pravatar.cc/48?u=agus"
+                alt=""
+                class="rounded-circle"
+                width="48"
+                height="48"
+              />
+              <span class="flex-grow-1">Agustín – La Plata 🇦🇷</span>
+              <span class="text-warning"> ★★★★★ </span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- florencia  -->
+        <div class="col">
+          <figure class="card h-100 border-0 shadow-sm p-4">
+            <blockquote class="blockquote mb-3">
+              <p class="mb-2">
+                Con las tutorías dejé de temerle a Python. Ahora automatizo
+                tareas en el laburo y gano tiempo para mirar pelis.
+              </p>
+            </blockquote>
+
+            <figcaption
+              class="d-flex align-items-center gap-2 small text-muted"
+            >
+              <img
+                src="https://i.pravatar.cc/48?u=flor"
+                alt=""
+                class="rounded-circle"
+                width="48"
+                height="48"
+              />
+              <span class="flex-grow-1">Florencia – Córdoba 🇦🇷</span>
+              <span class="text-warning"> ★★★★☆ </span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- mateo  -->
+        <div class="col">
+          <figure class="card h-100 border-0 shadow-sm p-4">
+            <blockquote class="blockquote mb-3">
+              <p class="mb-2">
+                Me sumé para mejorar mi portfolio y terminé consiguiendo trabajo
+                remoto. ¡La comunidad te empuja a más siempre!
+              </p>
+            </blockquote>
+
+            <figcaption
+              class="d-flex align-items-center gap-2 small text-muted"
+            >
+              <img
+                src="https://i.pravatar.cc/48?u=mateo"
+                alt=""
+                class="rounded-circle"
+                width="48"
+                height="48"
+              />
+              <span class="flex-grow-1">Mateo – Mendoza 🇦🇷</span>
+              <span class="text-warning"> ★★★★★ </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!--  testimonios en video yt  -->
+    <section class="container my-5" id="testimonios-video">
+      <h2 class="text-center mb-4">¿Qué dicen nuestros alumnos?</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/YBuz5AkTxzo?rel=0"
+              title="PROGRAMACIÓN EN CODERHOUSE: Mi experiencia – Valen Werle"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="small mt-2 text-muted">
+            <strong>Valen Werle</strong> – Cómo es cursar Programación en
+            Coderhouse, de cero al primer deploy.
+          </p>
+        </div>
+
+        <div class="col">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/oVUuxpXkeLg?rel=0"
+              title="¿ESTUDIAR en CODERHOUSE? – Chein"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="small mt-2 text-muted">
+            <strong>Chein</strong> te cuenta los cursos que le sirvieron y por
+            qué recomienda la modalidad en vivo.
+          </p>
+        </div>
+
+        <div class="col">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/vSgKM6UWMLc?rel=0"
+              title="Mi experiencia en Coderhouse – Denise Garraza"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="small mt-2 text-muted">
+            <strong>Denise Garraza</strong> – Sus tips para sacarle jugo a los
+            tutores y al Discord de la comunidad.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="bg-dark text-white py-4">
@@ -127,7 +484,9 @@
           href="mailto:vladimir.gonzalez.352@hotmail.com"
           class="text-decoration-none text-white-50"
         >
-          Contactar por correo electrónico&nbsp;<span class="text-white">✉️</span>
+          Contactar por correo electrónico&nbsp;<span class="text-white"
+            >✉️</span
+          >
         </a>
       </div>
     </footer>

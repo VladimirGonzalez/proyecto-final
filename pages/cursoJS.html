@@ -9,6 +9,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://framerusercontent.com/images/fKtNWuYKZuZGNSFUI57cKR23M0.svg"
+    />
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Curso JavaScript práctico: DOM, eventos y ES6+ en proyectos reales. Duración 10 semanas."
+    />
+    <link
+      rel="canonical"
+      href="https://vladimirgonzalez.github.io/proyecto-final/pages/cursoJS.html"
+    />
+
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Curso JavaScript práctico • Proyecto Final"
+    />
+    <meta
+      property="og:description"
+      content="Aprendé a crear interactividad web con JavaScript moderno y buenas prácticas."
+    />
+    <meta
+      property="og:url"
+      content="https://vladimirgonzalez.github.io/proyecto-final/pages/cursoJS.html"
+    />
+    <meta
+      property="og:image"
+      content="https://vladimirgonzalez.github.io/proyecto-final/img/cursoJS.webp"
+    />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <!-- navbar -->
@@ -75,15 +108,140 @@
             <li>Manejo de eventos</li>
             <li>ES6+ y buenas prácticas</li>
           </ol>
-          <a href="#" class="btn btn-primary mt-3">Inscribirme</a>
+
+          <section class="mt-5">
+            <h2 class="h4 mb-3">Lo que vas a construir</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="../img/to-do-mockup.jpg"
+                    class="card-img-top"
+                    alt="To-Do App"
+                  />
+                  <div class="card-body">
+                    <h3 class="h6">To-Do App</h3>
+                    <p class="small mb-0">Gestor de tareas con LocalStorage.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100 shadow-sm">
+                  <img
+                    src="../img/api-recetas-mockup.png"
+                    class="card-img-top"
+                    alt="Consumo API"
+                  />
+                  <div class="card-body">
+                    <h3 class="h6">Buscador de recetas</h3>
+                    <p class="small mb-0">Fetch a una API pública + filtros.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-5">
+            <h2 class="h4 mb-3">Demo express del curso</h2>
+
+            <div class="ratio ratio-16x9 rounded shadow-sm">
+              <iframe
+                src="https://www.youtube.com/embed/RJ5ctDyiTw0"
+                title="JavaScript en 90 segundos"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="small text-muted mt-2">
+              Un vistazo rápido a la app del Clima que programarás en la Semana
+              4.
+            </p>
+          </section>
+
+          <!-- boton de inscripcion nuevo con funcionalidad (profe, ahora al menos funciona jajaj) -->
+          <button
+            class="btn btn-primary mt-3"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-htmlcss"
+          >
+            Inscribirme
+          </button>
         </div>
       </div>
     </main>
 
     <!-- footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
-      <small>&copy; 2025 Proyecto Final</small>
+    <footer class="bg-dark text-white py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <small class="mb-2 mb-md-0">
+          &copy; 2025 Proyecto Final — Todos los derechos reservados 🎓
+        </small>
+        <a
+          href="mailto:vladimir.gonzalez.352@hotmail.com"
+          class="text-decoration-none text-white-50"
+        >
+          Contactar por correo electrónico&nbsp;<span class="text-white"
+            >✉️</span
+          >
+        </a>
+      </div>
     </footer>
+
+    <!-- MODAL INSCRIPCIÓN  -->
+    <div class="modal fade" id="modal-htmlcss" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow-lg">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">¡Sumate a JavaScript práctico!</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <form id="fake-form-htmlcss">
+            <div class="modal-body">
+              <p class="small">
+                Dejanos tu mail y te enviamos los pasos de pago. <br />
+                <span class="text-muted">(Demo: no se enviará nada real)</span>
+              </p>
+
+              <div class="mb-3">
+                <label class="form-label small">Nombre completo</label>
+                <input type="text" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label small">Email</label>
+                <input type="email" class="form-control" required />
+              </div>
+
+              <div
+                id="alert-ok-htmlcss"
+                class="alert alert-success d-none py-2 small"
+              >
+                ✅ ¡Listo! Te enviaremos la info en breve.
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

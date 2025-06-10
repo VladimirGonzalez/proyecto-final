@@ -9,6 +9,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://framerusercontent.com/images/fKtNWuYKZuZGNSFUI57cKR23M0.svg"
+    />
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Curso de HTML & CSS desde cero: estructura semántica, maquetado responsive y buenas prácticas. Duración 8 semanas."
+    />
+    <link
+      rel="canonical"
+      href="https://vladimirgonzalez.github.io/proyecto-final/pages/cursoHTML.html"
+    />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Curso HTML & CSS • Proyecto Final" />
+    <meta
+      property="og:description"
+      content="Domina la base de la web y creá sitios profesionales con nuestro curso intensivo."
+    />
+    <meta
+      property="og:url"
+      content="https://vladimirgonzalez.github.io/proyecto-final/pages/cursoHTML.html"
+    />
+    <meta
+      property="og:image"
+      content="https://vladimirgonzalez.github.io/proyecto-final/img/cursoHTML-CSS.webp"
+    />
   </head>
   <body>
     <!-- navbar -->
@@ -77,7 +107,102 @@
             <li>Css básico y selectores</li>
             <li>Responsive design</li>
           </ol>
-          <a href="#" class="btn btn-primary mt-3">Inscribirme</a>
+          <section class="mt-5">
+            <h2 class="h4 mb-3">Cronograma – paso a paso</h2>
+
+            <div class="table-responsive">
+              <table class="table align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Semana</th>
+                    <th scope="col">Tema principal</th>
+                    <th scope="col">Práctica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td>Primera página HTML</td>
+                    <td>Estructura semántica</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>CSS básico</td>
+                    <td>Selectores y cascada</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>Tipografía & color</td>
+                    <td>Variables y Google Fonts</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>Flexbox</td>
+                    <td>Layout de tarjetas</td>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                    <td>Grid</td>
+                    <td>Landing responsiva</td>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                    <td>Animaciones</td>
+                    <td>Transiciones & keyframes</td>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                    <td>Accesibilidad</td>
+                    <td>WAI-ARIA & contrastes</td>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                    <td>Proyecto final</td>
+                    <td>Mini-sitio publicable</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="mt-5">
+            <h2 class="h4 mb-3">Proyecto final: Portfolio responsive</h2>
+
+            <div class="row g-4">
+              <div class="col-12 col-lg-6">
+                <img
+                  src="../img/portfolio-mockup.png"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Mockup portfolio responsive"
+                />
+              </div>
+
+              <div class="col-lg-6">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">🎨 Diseño mobile-first</li>
+                  <li class="list-group-item">
+                    ⚡ Carga optimizada de imágenes WebP
+                  </li>
+                  <li class="list-group-item">🧑‍💻 Animaciones con keyframes</li>
+                  <li class="list-group-item">
+                    🌐 Deploy gratis en GitHub Pages
+                  </li>
+                </ul>
+                <p class="small text-muted mt-3">
+                  *Ideal para sumar a tu CV o tirarlo en el grupo de la facu 😉.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- boton de inscripcion nuevo con funcionalidad (profe, ahora al menos funciona jajaj) -->
+          <button
+            class="btn btn-primary mt-3"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-htmlcss"
+          >
+            Inscribirme
+          </button>
         </div>
       </div>
     </main>
@@ -93,10 +218,65 @@
           href="mailto:vladimir.gonzalez.352@hotmail.com"
           class="text-decoration-none text-white-50"
         >
-          Contactar por correo electrónico&nbsp;<span class="text-white">✉️</span>
+          Contactar por correo electrónico&nbsp;<span class="text-white"
+            >✉️</span
+          >
         </a>
       </div>
     </footer>
+
+    <!-- MODAL INSCRIPCIÓN  -->
+    <div class="modal fade" id="modal-htmlcss" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow-lg">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title">¡Sumate a HTML &amp; CSS!</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <form id="fake-form-htmlcss">
+            <div class="modal-body">
+              <p class="small">
+                Dejanos tu mail y te enviamos los pasos de pago. <br />
+                <span class="text-muted">(Demo: no se enviará nada real)</span>
+              </p>
+
+              <div class="mb-3">
+                <label class="form-label small">Nombre completo</label>
+                <input type="text" class="form-control" required />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label small">Email</label>
+                <input type="email" class="form-control" required />
+              </div>
+
+              <div
+                id="alert-ok-htmlcss"
+                class="alert alert-success d-none py-2 small"
+              >
+                ✅ ¡Listo! Te enviaremos la info en breve.
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

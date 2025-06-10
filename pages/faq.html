@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Final | Preguntas frecuentes</title>
+    <title>Proyecto final | Preguntas frecuentes</title>
 
     <!-- bootstrap + estilos -->
     <link
@@ -11,13 +11,38 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://framerusercontent.com/images/fKtNWuYKZuZGNSFUI57cKR23M0.svg"
+    />
 
-    <!-- SEO basico -->
+    <!-- SEO básico -->
     <meta
       name="description"
-      content="Respondemos las dudas más frecuentes sobre nuestros cursos online."
+      content="Respuestas rápidas sobre inscripción, pagos, certificados y requisitos para nuestros cursos online."
+    />
+    <link
+      rel="canonical"
+      href="https://vladimirgonzalez.github.io/proyecto-final/pages/faq.html"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Preguntas Frecuentes • Proyecto Final" />
+    <meta
+      property="og:description"
+      content="Todo lo que necesitás saber antes de empezar tu cursada."
+    />
+    <meta
+      property="og:url"
+      content="https://vladimirgonzalez.github.io/proyecto-final/pages/faq.html"
+    />
+    <meta
+      property="og:image"
+      content="https://vladimirgonzalez.github.io/proyecto-final/img/banner.webp"
     />
   </head>
+
   <body class="d-flex flex-column min-vh-100">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-light border-bottom">
@@ -33,7 +58,6 @@
           class="navbar-toggler"
           data-bs-toggle="collapse"
           data-bs-target="#nav-faq"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,144 +65,179 @@
         <div id="nav-faq" class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="../index.html">inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cursos.html">Cursos</a>
+              <a class="nav-link" href="cursos.html">cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <a class="nav-link" href="nosotros.html">nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a class="nav-link" href="contacto.html">contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="faq.html">FAQ</a>
+              <a class="nav-link active" href="faq.html">faq</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- FAQ -->
+    <!-- faq -->
     <main class="container my-5 flex-fill">
       <h1 class="text-center mb-4">Preguntas frecuentes</h1>
 
+      <!-- buscador interno -->
+      <div class="input-group mb-4">
+        <span class="input-group-text bg-primary text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11 6a5 5 0 1 1-2-9.89A5 5 0 0 1 11 6Zm-9 0a9 9 0 1 0 14.32 6.32l3.85 3.85a1 1 0 0 0 1.41-1.41l-3.85-3.85A9 9 0 0 0 2 6Z"
+            />
+          </svg>
+        </span>
+        <input
+          id="searchFaq"
+          class="form-control"
+          placeholder="Buscar… (ej. cuotas)"
+        />
+      </div>
+
       <div class="accordion" id="faq-list">
-        <!-- item 1 -->
+        <!-- inscripción -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="heading-inscripcion">
             <button
               class="accordion-button"
               data-bs-toggle="collapse"
-              data-bs-target="#q1"
+              data-bs-target="#faq-inscripcion"
             >
-              ¿Cómo me inscribo a un curso?
+              ¿cómo me inscribo a un curso?
             </button>
           </h2>
           <div
-            id="q1"
+            id="faq-inscripcion"
             class="accordion-collapse collapse show"
             data-bs-parent="#faq-list"
+            aria-labelledby="heading-inscripcion"
           >
             <div class="accordion-body">
-              Seleccioná el curso en la sección <strong>Cursos</strong>, haz
-              clic en <em>“Inscribirme”</em> y completa el formulario. Te
-              enviaremos por email el link de pago y los pasos finales.
+              elegí tu curso en la sección <strong>cursos</strong>, tocá
+              <kbd>inscribirme</kbd> y completá el formulario. te enviamos por
+              mail los pasos de pago y listo: ¡ya sos parte!
             </div>
           </div>
         </div>
 
-        <!-- item 2 -->
+        <!-- grabaciones -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="heading-grabaciones">
             <button
               class="accordion-button collapsed"
               data-bs-toggle="collapse"
-              data-bs-target="#q2"
+              data-bs-target="#faq-grabaciones"
             >
-              ¿Las clases quedan grabadas?
+              ¿las clases quedan grabadas?
             </button>
           </h2>
           <div
-            id="q2"
+            id="faq-grabaciones"
             class="accordion-collapse collapse"
             data-bs-parent="#faq-list"
+            aria-labelledby="heading-grabaciones"
           >
             <div class="accordion-body">
-              Sí. Todas las clases en vivo se graban y se suben a la plataforma
-              en menos de 24 h para que puedas repasar cuando quieras.
+              sí. subimos cada clase al campus en menos de
+              <strong>24 h</strong> para que repases cuando quieras, incluso
+              offline desde la app.
             </div>
           </div>
         </div>
 
-        <!-- item 3 -->
+        <!-- certificado -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="heading-certificado">
             <button
               class="accordion-button collapsed"
               data-bs-toggle="collapse"
-              data-bs-target="#q3"
+              data-bs-target="#faq-certificado"
             >
-              ¿Entregan certificado?
+              ¿obtengo un certificado válido?
             </button>
           </h2>
           <div
-            id="q3"
+            id="faq-certificado"
             class="accordion-collapse collapse"
             data-bs-parent="#faq-list"
+            aria-labelledby="heading-certificado"
           >
             <div class="accordion-body">
-              Al finalizar y aprobar el proyecto final obtendrás un certificado
-              digital emitido por Coderhouse que podrás compartir en LinkedIn.
+              al aprobar tu proyecto final recibís un <em>e-certificado</em> con
+              firma digital y qr de verificación, listo para linkedin.
             </div>
           </div>
         </div>
 
-        <!-- item 4 -->
+        <!-- pagos -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="heading-pago">
             <button
               class="accordion-button collapsed"
               data-bs-toggle="collapse"
-              data-bs-target="#q4"
+              data-bs-target="#faq-pago"
             >
-              ¿Cuáles son los medios de pago?
+              ¿qué medios y cuotas hay?
             </button>
           </h2>
           <div
-            id="q4"
+            id="faq-pago"
             class="accordion-collapse collapse"
             data-bs-parent="#faq-list"
+            aria-labelledby="heading-pago"
           >
             <div class="accordion-body">
-              Aceptamos tarjetas de crédito, débito y transferencias vía Mercado
-              Pago. También puedes abonar en cuotas sin interés con bancos
-              seleccionados.
+              <ul class="small mb-0">
+                <li>
+                  tarjetas de crédito → hasta
+                  <strong>12 cuotas sin interés</strong>
+                </li>
+                <li>transferencia bancaria (10 % off inmediato)</li>
+                <li>cripto en usdt / usdc al cambio blue</li>
+                <li>factura a para empresas con iva discriminado</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!-- item 5 -->
+        <!-- requisitos -->
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h2 class="accordion-header" id="heading-requisitos">
             <button
               class="accordion-button collapsed"
               data-bs-toggle="collapse"
-              data-bs-target="#q5"
+              data-bs-target="#faq-requisitos"
             >
-              ¿Necesito conocimientos previos?
+              ¿necesito conocimientos previos?
             </button>
           </h2>
           <div
-            id="q5"
+            id="faq-requisitos"
             class="accordion-collapse collapse"
             data-bs-parent="#faq-list"
+            aria-labelledby="heading-requisitos"
           >
             <div class="accordion-body">
-              Para los cursos <em>HTML & CSS</em> y <em>Python</em> no se
-              requieren conocimientos previos. El curso de JavaScript recomienda
-              saber HTML / CSS básicos.
+              <strong>no para los cursos iniciales.</strong> si vas por
+              javascript te sugerimos completar el quiz de html/css básico que
+              está gratis en el campus.
             </div>
           </div>
         </div>
@@ -197,27 +256,26 @@
           href="mailto:vladimir.gonzalez.352@hotmail.com"
           class="text-decoration-none text-white-50"
         >
-          Contactar por correo electrónico&nbsp;<span class="text-white">✉️</span>
+          Contactar por correo&nbsp;<span class="text-white">✉️</span>
         </a>
       </div>
     </footer>
 
-    <!-- bootstrap JS -->
+    <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- fade-in script -->
+    <!-- buscador faq -->
     <script>
-      const obs = new IntersectionObserver(
-        (es) => {
-          es.forEach(
-            (i) => i.isIntersecting && i.target.classList.add("visible")
-          );
-        },
-        { threshold: 0.2 }
-      );
-      document
-        .querySelectorAll("[data-animate]")
-        .forEach((el) => obs.observe(el));
+      document.getElementById("searchFaq")?.addEventListener("input", (e) => {
+        const term = e.target.value.toLowerCase();
+        document
+          .querySelectorAll("#faq-list .accordion-item")
+          .forEach((item) => {
+            item.style.display = item.textContent.toLowerCase().includes(term)
+              ? ""
+              : "none";
+          });
+      });
     </script>
   </body>
 </html>

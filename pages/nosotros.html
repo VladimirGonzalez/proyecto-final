@@ -9,6 +9,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://framerusercontent.com/images/fKtNWuYKZuZGNSFUI57cKR23M0.svg"
+    />
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Conocé al equipo argentino detrás de los cursos: desarrolladores, diseñadores y data scientists que enseñan lo que hacen."
+    />
+    <link
+      rel="canonical"
+      href="https://vladimirgonzalez.github.io/proyecto-final/pages/nosotros.html"
+    />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Nuestro equipo • Proyecto Final" />
+    <meta
+      property="og:description"
+      content="Descubrí quiénes somos y por qué amamos enseñar tecnología."
+    />
+    <meta
+      property="og:url"
+      content="https://vladimirgonzalez.github.io/proyecto-final/pages/nosotros.html"
+    />
+    <meta
+      property="og:image"
+      content="https://vladimirgonzalez.github.io/proyecto-final/img/docente1.webp"
+    />
   </head>
   <body>
     <!-- navbar -->
@@ -59,21 +89,75 @@
         diseñada para que puedas estudiar desde casa, a tu ritmo, y con la guía
         de expertos de la industria.
       </p>
+
+      <!-- misión – visión – valores ------------------------------------------- -->
+      <section class="row text-center mb-5">
+        <div class="col-md-4 px-4">
+          <h2 class="h6 mb-3 text-primary">Nuestra misión</h2>
+          <p class="small">
+            Democratizar la educación digital en toda Latinoamérica, acercando
+            oportunidades reales de trabajo
+            <strong>sin importar el código postal</strong>.
+          </p>
+        </div>
+
+        <div class="col-md-4 px-4">
+          <h2 class="h6 mb-3 text-primary">Nuestra visión</h2>
+          <p class="small">
+            Ver a <em>cada</em> estudiante argentino exportando talento al mundo
+            y cobrando en dólares (pero gastando en mate 🧉).
+          </p>
+        </div>
+
+        <div class="col-md-4 px-4">
+          <h2 class="h6 mb-3 text-primary">Nuestros valores</h2>
+          <ul class="list-unstyled small lh-lg">
+            <li>🫱🏽‍🫲🏿 Comunidad primero</li>
+            <li>🚀 Aprendizaje práctico</li>
+            <li>🎯 Feedback honesto</li>
+            <li>🌎 Diversidad federal</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-light py-5 rounded-3 shadow-sm">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-6 col-md-3">
+              <p class="display-6 fw-bold mb-0" data-count="35000">0</p>
+              <p class="small text-muted">Graduados</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="display-6 fw-bold mb-0" data-count="120">0</p>
+              <p class="small text-muted">Profes & tutores</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="display-6 fw-bold mb-0" data-count="8">0</p>
+              <p class="small text-muted">Años online</p>
+            </div>
+            <div class="col-6 col-md-3">
+              <p class="display-6 fw-bold mb-0" data-count="14">0</p>
+              <p class="small text-muted">Provincias reach</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="row g-4">
         <div class="col-md-4 text-center">
           <img src="../img/docente1.webp" class="rounded-circle mb-3" />
           <h3 class="h6">Ana Pérez</h3>
-          <p class="small">Frontend & UX</p>
+          <p class="small">CEO Co-Founder</p>
         </div>
         <div class="col-md-4 text-center">
           <img src="../img/docente2.webp" class="rounded-circle mb-3" />
           <h3 class="h6">Juan González</h3>
-          <p class="small">Backend & DevOps</p>
+          <p class="small">CTO Co-Founder</p>
         </div>
         <div class="col-md-4 text-center">
           <img src="../img/docente3.webp" class="rounded-circle mb-3" />
           <h3 class="h6">María Lopez</h3>
-          <p class="small">Data Science</p>
+          <p class="small">Tech Director</p>
         </div>
       </div>
     </main>
@@ -89,11 +173,32 @@
           href="mailto:vladimir.gonzalez.352@hotmail.com"
           class="text-decoration-none text-white-50"
         >
-          Contactar por correo electrónico&nbsp;<span class="text-white">✉️</span>
+          Contactar por correo electrónico&nbsp;<span class="text-white"
+            >✉️</span
+          >
         </a>
       </div>
     </footer>
 
+    <script>
+      // profe a esta funcion la saque de internet, es un contador para darle un poco de vida a las metricas
+      //contador
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll("[data-count]");
+        counters.forEach((el) => {
+          const goal = +el.dataset.count;
+          const step = Math.max(1, Math.floor(goal / 100));
+          let cur = 0;
+          const tick = () => {
+            cur += step;
+            el.textContent = cur.toLocaleString("es-AR");
+            if (cur < goal) requestAnimationFrame(tick);
+            else el.textContent = goal.toLocaleString("es-AR");
+          };
+          tick();
+        });
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

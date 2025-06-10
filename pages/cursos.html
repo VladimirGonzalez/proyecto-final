@@ -9,6 +9,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://framerusercontent.com/images/fKtNWuYKZuZGNSFUI57cKR23M0.svg"
+    />
+
+    <!-- SEO básico -->
+    <meta
+      name="description"
+      content="Lista completa de cursos: HTML & CSS, JavaScript práctico y Python para todos. Modalidad flexible y certificado oficial."
+    />
+    <link
+      rel="canonical"
+      href="https://vladimirgonzalez.github.io/proyecto-final/pages/cursos.html"
+    />
+
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Todos los cursos disponibles • Proyecto Final"
+    />
+    <meta
+      property="og:description"
+      content="Conocé los programas, duración y costos de cada curso online en vivo."
+    />
+    <meta
+      property="og:url"
+      content="https://vladimirgonzalez.github.io/proyecto-final/pages/cursos.html"
+    />
+    <meta
+      property="og:image"
+      content="https://vladimirgonzalez.github.io/proyecto-final/img/cursoHTML-CSS.webp"
+    />
   </head>
 
   <body class="d-flex flex-column min-vh-100">
@@ -105,6 +138,133 @@
           </article>
         </div>
       </div>
+
+      <!-- itinerario de los cursos-->
+      <section class="mt-5" id="itinerarios">
+        <h2 class="text-center mb-4">Itinerarios</h2>
+
+        <div class="accordion" id="plan-estudios">
+          <!-- HTML & CSS -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                data-bs-toggle="collapse"
+                data-bs-target="#plan-html"
+              >
+                HTML & CSS desde cero (8 semanas)
+              </button>
+            </h2>
+            <div
+              id="plan-html"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#plan-estudios"
+            >
+              <div class="accordion-body">
+                <ul class="mb-0 small">
+                  <li>
+                    <strong>Semana 1 – 2</strong>: etiquetas básicas, estructura
+                    semántica.
+                  </li>
+                  <li>
+                    <strong>Semana 3 – 4</strong>: CSS selector-mania, colores y
+                    tipografías.
+                  </li>
+                  <li>
+                    <strong>Semana 5 – 6</strong>: Flexbox, Grid y layout
+                    responsive.
+                  </li>
+                  <li>
+                    <strong>Semana 7 – 8</strong>: animaciones, accesibilidad y
+                    mini-proyecto final.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#plan-js"
+              >
+                JavaScript práctico (10 semanas)
+              </button>
+            </h2>
+            <div
+              id="plan-js"
+              class="accordion-collapse collapse"
+              data-bs-parent="#plan-estudios"
+            >
+              <div class="accordion-body">
+                <ul class="mb-0 small">
+                  <li>
+                    <strong>Sem 1 – 2</strong>: fundamentos y sintaxis ES6.
+                  </li>
+                  <li>
+                    <strong>Sem 3 – 4</strong>: DOM + eventos en una página de
+                    memes.
+                  </li>
+                  <li>
+                    <strong>Sem 5 – 6</strong>: fetch API, promesas y consumo de
+                    datos de MercadoLibre.
+                  </li>
+                  <li>
+                    <strong>Sem 7 – 8</strong>: módulos, webpack y mejores
+                    prácticas.
+                  </li>
+                  <li>
+                    <strong>Sem 9 – 10</strong>: proyecto integrador —
+                    calculadora de precios con carrito.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Python ----------------------------------------------------------- -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#plan-python"
+              >
+                Python para todos (6 semanas)
+              </button>
+            </h2>
+            <div
+              id="plan-python"
+              class="accordion-collapse collapse"
+              data-bs-parent="#plan-estudios"
+            >
+              <div class="accordion-body">
+                <ul class="mb-0 small">
+                  <li>
+                    <strong>Sem 1 – 2</strong>: sintaxis básica, tipos de datos
+                    y mate 🍵.
+                  </li>
+                  <li>
+                    <strong>Sem 3 – 4</strong>: lectura de archivos y
+                    automatización de tareas cotidianas.
+                  </li>
+                  <li>
+                    <strong>Sem 5</strong>: introducción a Pandas + análisis de
+                    un CSV de inflación argentina.
+                  </li>
+                  <li>
+                    <strong>Sem 6</strong>: mini-dashboard en Streamlit y demo
+                    final.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-dark text-white py-4">
@@ -118,7 +278,9 @@
           href="mailto:vladimir.gonzalez.352@hotmail.com"
           class="text-decoration-none text-white-50"
         >
-          Contactar por correo electrónico&nbsp;<span class="text-white">✉️</span>
+          Contactar por correo electrónico&nbsp;<span class="text-white"
+            >✉️</span
+          >
         </a>
       </div>
     </footer>
