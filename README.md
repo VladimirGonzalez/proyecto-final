@@ -20,8 +20,7 @@ Este es un sitio web educativo creado como proyecto final del curso de Desarroll
 - `nosotros.html`: equipo docente y visión.
 - `contacto.html`: formulario de contacto.
 - `faq.html`: preguntas frecuentes.
-- `gracias.html`: pantalla de confirmación al enviar formulario.
-
+- 
 ## ✨ Funcionalidades destacadas
 
 - Diseño responsivo adaptable a distintos dispositivos.
